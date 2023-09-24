@@ -8,12 +8,13 @@
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Welcome to this form</p>
+
     <form id="survey-form">
-      <fieldset>
+
+      <fieldset id="personal-details">
+        <legend>Personal details:</legend>
         <label id="name-label" for="name">Name: (required) <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
         <label id="email-label" for="email">Email: (required) <input id="email" name="email" type="email" pattern="[a-z0-9]@[a-z].[a-z]" placeholder="Enter your email" required /></label>
-      </fieldset>
-      <fieldset>
         <label id="number-label" for="number">Age: <input id="number" name="number" type="number" min="13" max="140" placeholder="Enter your age"/></label>
         <label id="gender-label" for="gender">Gender: 
           <select id="dropdown" name="gender">
@@ -23,6 +24,14 @@
             <option value="1">Other</option>
         </label>
       </fieldset>
+
+      <fieldset id="questions">
+        <legend>Which console brand do you prefer?</legend>
+        <label for="xbox"><input id="xbox" type="radio" name="console-type" class="inline" /> Xbox</label>
+        <label for="playstation"><input id="playstation" type="radio" name="console-type" class="inline" /> Playstation</label>
+        <label for="nintendo"><input id="nintendo" type="radio" name="console-type" class="inline" /> Nintendo</label>
+      </fieldset>
+
       <input type="submit" value="Submit" />
 
 
