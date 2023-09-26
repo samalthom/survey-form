@@ -11,8 +11,10 @@ h1, #description {
   margin: 0em auto;
   text-align: center;
   background-color: rgba(228,228,217,0.6);
-  width: 75vw;
+  width: 70vw;
   padding: 15px;
+  max-width: 750px;
+  min-width: 400px;
 }
 
 h1{ 
