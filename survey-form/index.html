@@ -8,7 +8,7 @@
   <body>
 
     <h1 id="title">Survey Form</h1>
-    <p id="description">Welcome to this form</p>
+    <p id="description">Welcome to this form about your gaming preferences!</p>
 
     <form id="survey-form">
 
@@ -26,16 +26,16 @@
           </select>
         </label>
       </fieldset>
-
+      <p></p>
       <fieldset>
-        <legend>Gaming preferences</legend>
-
-        <p id="question">Which console brand do you prefer?</p>
+        <legend>Which console brand do you prefer?</legend>
         <label for="xbox"><input value="1" id="xbox" type="radio" name="console-type" class="inline" /> Xbox</label>
         <label for="playstation"><input value="2" id="playstation" type="radio" name="console-type" class="inline" /> Playstation</label>
         <label for="nintendo"><input value="3" id="nintendo" type="radio" name="console-type" class="inline"  /> Nintendo</label>
-
-        <p id="question">Which game franchises do you like?</p>
+      </fieldset>
+      <p></p>
+      <fieldset>
+        <legend>Which game franchises do you like?</legend>
         <label for="minecraft"><input value="1" id="minecraft" type="checkbox" required name="minecraft" class="inline" /> Minecraft</label>
         <label for="grand-theft-auto"><input value="2" id="grand-theft-auto" type="checkbox" required name="grand-theft-auto" class="inline" /> Grand Theft Auto</label>
         <label for="mario"><input value="3" id="mario" type="checkbox" required name="mario" class="inline" /> Mario</label>
@@ -46,10 +46,11 @@
         <label for="call-of-duty"><input value="8" id="call-of-duty" type="checkbox" required name="call-of-duty" class="inline" /> Call of Duty</label>
         <label for="super-smash-bros"><input value="9" id="super-smash-bros" type="checkbox" required name="super-smash-bros" class="inline" /> Super Smash Bros</label>
         <label for="fifa"><input value="10" id="fifa" type="checkbox" required name="fifa" class="inline" /> FIFA</label>
-
-        <label for="favourite">What is your favourite game and why?
-          <textarea id="favourite" name="favourite" rows="3" cols="30" placeholder="My favourite game is... because..."></textarea>
-        </label>
+      </fieldset>
+      <p></p>
+      <fieldset>
+        <legend>What is your favourite game and why?</legend>
+        <textarea id="favourite" name="favourite" rows="3" cols="30" placeholder="My favourite game is... because..."></textarea>
       </fieldset>
 
         <input id="submit" type="submit" value="Submit" />
